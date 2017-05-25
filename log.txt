@@ -1,0 +1,240 @@
+root@osboxes:~/Desktop/Tools/Veil-Evasion# ./Veil-Evasion.py =========================================================================
+ Necessary component missing
+ Please run: bash /root/Desktop/Tools/Veil-Evasion/setup/setup.sh -s
+=========================================================================
+root@osboxes:~/Desktop/Tools/Veil-Evasion# rm -rf /root/.config/wine/veil
+root@osboxes:~/Desktop/Tools/Veil-Evasion# /root/Desktop/Tools/Veil-Evasion/setup/setup.sh -c
+ ==========================================================================
+             Veil-Evasion (Setup Script) | [Updated]: 2016-09-09
+ ==========================================================================
+  [Web]: https://www.veil-framework.com/ | [Twitter]: @VeilFramework
+ ==========================================================================
+
+ [I] Kali Linux "2017.1" x86_64 detected...
+
+
+
+ [*] Initializing package installation
+
+
+ [*] Adding x86 architecture to x86_64 system for Wine
+
+W: The repository 'http://http.kali.org/kali kali-rolling Release' does not have a Release file.
+E: Failed to fetch http://osblrpsnws3-wcg.corp.capgemini.com:8080/auth/?du=aHR0cDovL2h0dHAua2FsaS5vcmcva2FsaS9kaXN0cy9rYWxpLXJvbGxpbmcvbWFpbi9iaW5hcnktYW1kNjQvUGFja2FnZXM=&ip=MTAuNzYuODMuODI6ODA4MA==  401  Authorization Required
+E: Some index files failed to download. They have been ignored, or old ones used instead.
+ [*] Installing Wine 32-bit and 64-bit binaries
+E: Package 'wine32' has no installation candidate
+ [ERROR] Failed to install Wine... Exit code: 100
+
+ [*] Creating new Veil Wine environment in: /root/.config/wine/veil
+ [*] Initializing Veil's Wine environment...
+it looks like wine32 is missing, you should install it.
+as root, please execute "apt-get install wine32"
+wine: '/root/.config/wine/veil' is a 32-bit installation, it cannot support 64-bit applications.
+ [*] Veil Wine environment successfully created!
+
+
+
+ [*] Installing dependencies
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+E: Unable to locate package mingw-w64
+E: Unable to locate package monodoc-browser
+E: Unable to locate package monodevelop
+E: Unable to locate package mono-mcs
+E: Unable to locate package golang
+ [ERROR] Failed to install dependencies... Exit code: 100
+
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+metasploit-framework is already the newest version (4.14.10-0kali1).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+
+ [*] Installing Capstone dependencies...
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+python-capstone is already the newest version (3.0.4-1).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+
+ [*] Initializing Python dependencies installation...
+
+
+ [*] Installing Python's SymmetricJSONRPC...
+ [*] Installing SymmetricJSONRPC dependency (via Repository)
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+E: Unable to locate package python-symmetric-jsonrpc
+ [ERROR] Failed to install SymmetricJSONRPC... Exit code: 100
+
+
+ [*] Initializing (Wine) Python dependencies installation...
+
+
+ [*] Preparing (Wine) Python directories...
+
+
+ [*] Installing (Wine) Python...
+ [*] Next -> Next -> Next -> Finished! ...Overwrite if prompt. Use default values.
+it looks like wine32 is missing, you should install it.
+as root, please execute "apt-get install wine32"
+err:ole:marshal_object couldn't get IPSFactory buffer for interface {00000131-0000-0000-c000-000000000046}
+err:ole:marshal_object couldn't get IPSFactory buffer for interface {6d5140c1-7436-11ce-8034-00aa006009fa}
+err:ole:StdMarshalImpl_MarshalInterface Failed to create ifstub, hres=0x80004002
+err:ole:CoMarshalInterface Failed to marshal the interface {6d5140c1-7436-11ce-8034-00aa006009fa}, 80004002
+err:ole:get_local_server_stream Failed: 80004002
+err:ole:marshal_object couldn't get IPSFactory buffer for interface {00000131-0000-0000-c000-000000000046}
+err:ole:marshal_object couldn't get IPSFactory buffer for interface {6d5140c1-7436-11ce-8034-00aa006009fa}
+err:ole:StdMarshalImpl_MarshalInterface Failed to create ifstub, hres=0x80004002
+err:ole:CoMarshalInterface Failed to marshal the interface {6d5140c1-7436-11ce-8034-00aa006009fa}, 80004002
+err:ole:get_local_server_stream Failed: 80004002
+Could not load wine-gecko. HTML rendering will be disabled.
+it looks like wine32 is missing, you should install it.
+as root, please execute "apt-get install wine32"
+Could not load wine-gecko. HTML rendering will be disabled.
+wine: configuration in '/root/.config/wine/veil' has been updated.
+err:mscoree:LoadLibraryShim error reading registry key for installroot
+err:mscoree:LoadLibraryShim error reading registry key for installroot
+err:mscoree:LoadLibraryShim error reading registry key for installroot
+err:mscoree:LoadLibraryShim error reading registry key for installroot
+err:msi:ITERATE_Actions Execution halted, action L"SelectDirectoryDlg" returned 1602
+ [ERROR] Failed to install (Wine) Python 2.7.5... Exit code: 66
+
+
+ [*] Installing (Wine) Python dependencies...
+
+
+ [*] Installing (Wine) Python's pywin32-219.win32-py2.7.exe...
+ [*] Next -> Next -> Next -> Finished! ...Overwrite if prompt. Use default values.
+it looks like wine32 is missing, you should install it.
+as root, please execute "apt-get install wine32"
+it looks like wine32 is missing, you should install it.
+as root, please execute "apt-get install wine32"
+wine: Bad EXE format for Z:\root\Desktop\Tools\Veil-Evasion\setup\pywin32-219.win32-py2.7.exe.
+ [ERROR] Failed to install pywin32-219.win32-py2.7.exe... Exit code: 193
+
+
+
+ [*] Installing (Wine) Python's pycrypto-2.6.win32-py2.7.exe...
+ [*] Next -> Next -> Next -> Finished! ...Overwrite if prompt. Use default values.
+it looks like wine32 is missing, you should install it.
+as root, please execute "apt-get install wine32"
+it looks like wine32 is missing, you should install it.
+as root, please execute "apt-get install wine32"
+wine: Bad EXE format for Z:\root\Desktop\Tools\Veil-Evasion\setup\pycrypto-2.6.win32-py2.7.exe.
+ [ERROR] Failed to install pycrypto-2.6.win32-py2.7.exe... Exit code: 193
+
+
+
+ [*] Installing Python's PyInstaller
+
+
+ [*] Installing Python's PEFile (For PyInstaller)
+it looks like wine32 is missing, you should install it.
+as root, please execute "apt-get install wine32"
+wine: cannot find '/root/.config/wine/veil/drive_c/Python27/python.exe'
+
+
+ [*] Installing Python's Futures (For PyInstaller)
+it looks like wine32 is missing, you should install it.
+as root, please execute "apt-get install wine32"
+wine: cannot find '/root/.config/wine/veil/drive_c/Python27/python.exe'
+
+
+ [*] Installing Python's setup  tools
+it looks like wine32 is missing, you should install it.
+as root, please execute "apt-get install wine32"
+wine: cannot find '/root/.config/wine/veil/drive_c/Python27/python.exe'
+
+ [*] Initializing (Wine) Ruby dependencies installation...
+
+
+ [*] Installing (Wine) Ruby & dependencies
+ [*] Next -> Next -> Next -> Finished! ...Overwrite if prompt. Use default values.
+it looks like wine32 is missing, you should install it.
+as root, please execute "apt-get install wine32"
+it looks like wine32 is missing, you should install it.
+as root, please execute "apt-get install wine32"
+wine: Bad EXE format for Z:\root\Desktop\Tools\Veil-Evasion\setup\rubyinstaller-1.8.7-p371.exe.
+ [ERROR] Failed to install (Wine) Ruby.exe... Exit code: 193
+
+
+ [*] Installing (Wine) Ruby OCRA gem...
+it looks like wine32 is missing, you should install it.
+as root, please execute "apt-get install wine32"
+wine: cannot find '/root/.config/wine/veil/drive_c/Ruby187/bin/ruby.exe'
+ [ERROR] Failed to install (Wine) Ruby OCRA Gem... Exit code: 2
+
+
+ [*] Extracting (Wine) Ruby dependencies...
+
+ [*] Initializing Go dependencies installation...
+
+awk: fatal: Invalid range end: /[:-.]/
+E: No packages found
+/root/Desktop/Tools/Veil-Evasion/setup/setup.sh: line 546: [: : integer expression expected
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+E: Unable to locate package gccgo-5
+update-alternatives: error: no alternatives for go
+
+
+ [*] Installing Go x86_64 (via TAR)
+ [ERROR] Bad hash for go153x64.tar.gz!
+
+
+ [*] Updating Veil-Framework configuration...
+
+ [*] Detected current Veil-Framework settings file. Removing...
+
+
+ Veil-Framework configuration:
+
+ [*] OPERATING_SYSTEM = Kali
+ [*] TERMINAL_CLEAR = clear
+ [*] WINEPREFIX = /root/.config/wine/veil/
+ [*] TEMP_DIR = /tmp/
+ [*] MSFVENOM_OPTIONS = 
+ [*] METASPLOIT_PATH = /usr/share/metasploit-framework/
+ [*] MSFVENOM_PATH = /usr/bin/
+ [*] PYINSTALLER_PATH = /opt/veil/PyInstaller-3.2/
+
+ [*] VEIL_EVASION_PATH = /root/Desktop/Tools/Veil-Evasion/
+ [*] PAYLOAD_SOURCE_PATH = /usr/share/veil-output/source/
+ [*] PAYLOAD_COMPILED_PATH = /usr/share/veil-output/compiled/
+ [*] GENERATE_HANDLER_SCRIPT = True
+ [*] HANDLER_PATH = /usr/share/veil-output/handlers/
+ [*] HASH_LIST = /usr/share/veil-output/hashes.txt
+
+ [*] VEIL_CATAPULT_PATH = /root/Desktop/Tools/Veil-Catapult/
+ [*] CATAPULT_RESOURCE_PATH = /usr/share/veil-output/catapult/
+
+ Configuration File Written To '/etc/veil/settings.py'
+
+
+ [*] Ensuring this account (root) owns veil output directory (/usr/share/veil-output)...
+ [*] Ensuring this account (root) has correct ownership of /root/.config/wine/veil
+  There was issues installing the following:
+
+ 
+Failed to install Wine... Exit code: 100
+Failed to install dependencies... Exit code: 100
+Failed to install SymmetricJSONRPC... Exit code: 100
+Failed to install (Wine) Python 2.7.5... Exit code: 66
+Failed to install pywin32-219.win32-py2.7.exe... Exit code: 193
+Failed to install pycrypto-2.6.win32-py2.7.exe... Exit code: 193
+Failed to install (Wine) Ruby.exe... Exit code: 193
+Failed to install (Wine) Ruby OCRA Gem... Exit code: 2
+Bad hash for go153x64.tar.gz!
+
+
+ [I] If you have any errors running Veil-Evasion, delete the Veil Wine profile ('rm -rf /root/.config/wine/veil') and re-run: '/root/Desktop/Tools/Veil-Evasion/setup/setup.sh -c'
+
+
+ [I] Done!
+
+root@osboxes:~/Desktop/Tools/Veil-Evasion# 
